@@ -48,7 +48,7 @@ SELECT DISTINCT
 credit_card_balance.SK_ID_CURR,
 installments_payments.DAYS_INSTALMENT,
 installments_payments.DAYS_ENTRY_PAYMENT,
-ABS("installments_payments.DAYS_ENTRY_PAYMENT - installments_payments.DAYS_INSTALMENT) AS delay_days,
+ABS(installments_payments.DAYS_ENTRY_PAYMENT - installments_payments.DAYS_INSTALMENT) AS delay_days,
 installments_payments.AMT_INSTALMENT,
 installments_payments.AMT_PAYMENT
 FROM credit_card_balance 
